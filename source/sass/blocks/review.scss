@@ -1,0 +1,13 @@
+.review {
+  .review__text {
+    margin: 0;
+  }
+
+  .review__author {
+    @include font(17px, 24px, 700, #000000);
+  }
+
+  .review__link {
+    font-size: 17px;
+  }
+}

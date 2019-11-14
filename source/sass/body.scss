@@ -1,0 +1,13 @@
+.body {
+  font-family: $font;
+  @include font(15px, 24px, 400, #444444);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("OpenSans"),
+    url("../fonts/opensans.woff2"),
+    url("../fonts/opensans.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    local("OpenSans"),
+    url("../fonts/opensansbold.woff2"),
+    url("../fonts/opensansbold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "body.scss";
+@import "container.scss";
+@import "visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/promo.scss";
+@import "blocks/section-title.scss";
+@import "blocks/categories.scss";
+@import "blocks/popular-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/social.scss";
+@import "blocks/modal.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/order.scss";

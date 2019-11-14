@@ -1,0 +1,14 @@
+.promo {
+  background-color: #f1f1f1;
+  .promo__title {
+    @include font(27px, 30px, 700, #000000);
+    text-align: center;
+  }
+}
+
+.promo--home {
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-position: center;
+  width: 320px;
+  height: 373px;
+}
