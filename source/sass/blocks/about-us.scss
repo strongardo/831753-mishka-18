@@ -6,6 +6,7 @@
 
   .about-us__item {
     padding-bottom: 30px;
+
     @include font(17px, 20px, 700, #000000);
   }
 }

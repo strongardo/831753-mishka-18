@@ -1,14 +1,17 @@
-.categories{
+.categories {
   .categories__list {
     list-style: none;
     padding: 0;
   }
+
   .categories__item--interior {
     background-color: #63d1bb;
   }
+
   .categories__item--toys {
     background-color: #56c3b2;
   }
+
   .categories__link {
     @include font(19px, 24px, 700, #ffffff);
   }
