@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body container">
 
   <header class="page-header">
     <a class="page-header__logo logo">
-      <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35"
-        alt="Логотип интернет-магазина 'Мишка'">
+      <img class="logo__image" src="img\logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина 'Мишка'">
     </a>
     <button class="page-header__burger-button burger-button" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
@@ -29,14 +30,16 @@
   <main class="page-main">
 
     <div class="promo promo--home">
-      <h1 class="promo__title section-title">Милые штучки ручной работы для дома</h1>
+      <h1 class="promo__title">Милые штучки ручной работы для дома</h1>
     </div>
 
     <section class="categories">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="categories__list">
-        <li class="categories__item"><a href="#" class="categories__link">Предметы интерьера</a></li>
-        <li class="categories__item"><a href="#" class="categories__link">Детские игрушки</a></li>
+        <li class="categories__item categories__item--interior"><a href="#" class="categories__link">Предметы
+            интерьера</a></li>
+        <li class="categories__item categories__item--toys"><a href="#" class="categories__link">Детские игрушки</a>
+        </li>
       </ul>
     </section>
 
@@ -60,10 +63,10 @@
           <td>15 см</td>
         </tr>
       </table>
-      <img class="popular-product__image" src="https://via.placeholder.com/260x315" width="260" height="315"
+      <img class="popular-product__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
         alt="Вязаные корзинки">
       <span class="popular-product__price">Цена: 990 руб.</span>
-      <a href="" class="popular-product__order-button button">Заказать</a>
+      <a href="#" class="popular-product__order-button button">Заказать</a>
     </section>
 
     <section class="about-us">
@@ -169,8 +172,7 @@
       <span class="develop__title">Разработано</span>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link"
         aria-label="Профессиональный онлайн‑курс HTML и CSS, уровень 2">
-        <img src="https://via.placeholder.com/27x34" class="develop__image" width="27" height="34"
-          alt="Логотип Академии">
+        <img src="img/htmlacademy.svg" class="develop__image" width="27" height="34" alt="Логотип Академии">
       </a>
     </p>
   </footer>

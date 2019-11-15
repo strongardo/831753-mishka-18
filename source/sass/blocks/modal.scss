@@ -1,0 +1,25 @@
+.modal {
+  display: none;
+
+  .modal__title {
+    text-transform: uppercase;
+  }
+
+  .modal__size-choice {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal__button {
+    border: 2px solid $dark;
+
+    @include font(17px, 17px, 700, $dark);
+  }
+
+  .modal__submit-button {
+    background-color: $blue;
+    border: none;
+    color: #ffffff;
+  }
+}

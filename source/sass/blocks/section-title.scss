@@ -1,0 +1,4 @@
+.section-title {
+  @include font($h2-size, 30px, 700, $black);
+  text-align: center;
+}

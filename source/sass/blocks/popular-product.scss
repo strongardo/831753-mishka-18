@@ -1,0 +1,10 @@
+.popular-product {
+  .popular-product__category {
+    @include font(17px, 20px, 700, $blue);
+    text-transform: uppercase;
+  }
+
+  .popular-product__price {
+    @include font(17px, 24px, 700, $dark);
+  }
+}

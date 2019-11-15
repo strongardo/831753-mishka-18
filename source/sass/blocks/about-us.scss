@@ -1,0 +1,12 @@
+.about-us {
+  .about-us__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  .about-us__item {
+    padding-bottom: 30px;
+
+    @include font(17px, 20px, 700, $black);
+  }
+}

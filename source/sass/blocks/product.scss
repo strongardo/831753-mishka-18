@@ -1,0 +1,14 @@
+.product {
+  .product__title {
+    @include font(17px, 24px, 700, $black);
+  }
+
+  .product__description {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .product__price {
+    @include font(15px, 24px, 700, $black);
+  }
+}
