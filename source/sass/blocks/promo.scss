@@ -2,7 +2,7 @@
   background-color: #f1f1f1;
 
   .promo__title {
-    @include font(27px, 30px, 700, #000000);
+    @include font(27px, 30px, 700, $black);
     text-align: center;
   }
 }

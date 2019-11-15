@@ -4,7 +4,7 @@
   }
 
   .review__author {
-    @include font(17px, 24px, 700, #000000);
+    @include font(17px, 24px, 700, $black);
   }
 
   .review__link {

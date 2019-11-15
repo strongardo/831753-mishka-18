@@ -9,12 +9,12 @@
   }
 
   .order__item-title {
-    @include font(17px, 17px, 700, #63d1bb);
+    @include font(17px, 17px, 700, $blue);
     text-transform: uppercase;
   }
 
   .order__label {
-    @include font(17px, 18px, 700, #000000);
+    @include font(17px, 18px, 700, $black);
   }
 
   .order__input {
