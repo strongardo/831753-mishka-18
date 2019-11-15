@@ -1,25 +1,6 @@
-@font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans"),
-    local("OpenSans"),
-    url("../fonts/opensans.woff2"),
-    url("../fonts/opensans.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans"),
-    local("OpenSans"),
-    url("../fonts/opensansbold.woff2"),
-    url("../fonts/opensansbold.woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
 @import "variables.scss";
 @import "mixins.scss";
+@import "fonts.scss";
 @import "body.scss";
 @import "container.scss";
 @import "visually-hidden.scss";
