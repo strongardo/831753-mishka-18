@@ -1,7 +1,7 @@
 .body {
   font-family: $font;
 
-  @include font(15px, 24px, 400, $dark);
+  @include font($body-size, 24px, 400, $dark);
 
   img {
     max-width: 100%;
