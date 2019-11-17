@@ -2,6 +2,12 @@
   .categories__list {
     list-style: none;
     padding: 0;
+    margin: 0;
+  }
+
+  .categories__item {
+    padding-top: 27px;
+    padding-bottom: 33px;
   }
 
   .categories__item--interior {
@@ -13,6 +19,51 @@
   }
 
   .categories__link {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
     @include font(19px, 24px, 700, #ffffff);
+  }
+
+  .categories__text {
+    display: block;
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories {
+    margin-top: -75px;
+    margin-bottom: 50px;
+    background-color: #fafafa;
+
+    .categories__list {
+      display: flex;
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    .categories__link {
+      width: 384px;
+      margin: 0;
+      padding-right: 0;
+      padding-left: 35px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .categories {
+
+    .categories__list {
+      width: 1150px;
+    }
+
+    .categories__link {
+      width: 575px;
+    }
+
   }
 }

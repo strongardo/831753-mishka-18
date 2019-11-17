@@ -1,10 +1,120 @@
 .popular-product {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  margin-bottom: 30px;
+
+  .popular-product__title {
+    margin-bottom: 10px;
+  }
+
   .popular-product__category {
+    display: block;
+    margin-bottom: 30px;
     @include font(17px, 20px, 700, $blue);
     text-transform: uppercase;
   }
 
+  .popular-product__description {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .popular-product__characteristics {
+    margin-bottom: 28px;
+  }
+
+  .popular-product__characteristic {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .popular-product__property {
+    min-width: 100px;
+  }
+
+  .popular-product__image {
+    margin-bottom: 20px;
+  }
+
   .popular-product__price {
+    display: block;
+    margin-left: 70px;
+    margin-bottom: 25px;
     @include font(17px, 24px, 700, $dark);
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  .popular-product {
+
+    .popular-product__wrapper {
+      display: flex;
+    }
+
+    .popular-product__wrapper--title {
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .popular-product__combiner {
+      width: 291px;
+      margin-right: auto;
+    }
+
+
+
+    .popular-product__title {
+      margin-bottom: 0;
+      margin-right: auto;
+    }
+
+    .popular-product__category {
+      margin-bottom: 0;
+      margin-right: 27px;
+      width: 70px;
+      text-align: center;
+    }
+
+    .popular-product__price {
+      margin-top: -55px;
+    }
+
+  }
+}
+
+@media (min-width: 1150px) {
+  .popular-product {
+
+    .popular-product__wrapper--title {
+      margin-bottom: -80px;
+    }
+
+    .popular-product__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
+
+    .popular-product__category {
+      order: -1;
+    }
+
+    .popular-product__combiner {
+      padding-top: 120px;
+      margin-left: 100px;
+    }
+
+    .popular-product__price {
+      margin-top: 80px;
+      margin-left: 100px;
+    }
+
+    .popular-product__order-button {
+      margin-left: 100px;
+    }
+
   }
 }

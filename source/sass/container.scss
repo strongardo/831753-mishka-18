@@ -1,5 +1,24 @@
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  // border: 1px solid gray;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
 }
