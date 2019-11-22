@@ -10,6 +10,7 @@
   .popular-product__category {
     display: block;
     margin-bottom: 30px;
+
     @include font(17px, 20px, 700, $blue);
     text-transform: uppercase;
   }
@@ -42,15 +43,13 @@
     display: block;
     margin-left: 70px;
     margin-bottom: 25px;
+
     @include font(17px, 24px, 700, $dark);
   }
-
-
 }
 
 @media (min-width: 768px) {
   .popular-product {
-
     .popular-product__wrapper {
       display: flex;
     }
@@ -64,8 +63,6 @@
       width: 291px;
       margin-right: auto;
     }
-
-
 
     .popular-product__title {
       margin-bottom: 0;
@@ -82,13 +79,11 @@
     .popular-product__price {
       margin-top: -55px;
     }
-
   }
 }
 
 @media (min-width: 1150px) {
   .popular-product {
-
     .popular-product__wrapper--title {
       margin-bottom: -80px;
     }
@@ -115,6 +110,5 @@
     .popular-product__order-button {
       margin-left: 100px;
     }
-
   }
 }

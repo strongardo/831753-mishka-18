@@ -1,5 +1,4 @@
 .main-menu {
-
   .main-menu__list {
     list-style: none;
     padding: 0;
@@ -8,15 +7,28 @@
 
   .main-menu__item {
     display: block;
-    padding-left: 76px;
     padding-top: 32px;
     padding-bottom: 30px;
-
     border-bottom: solid 1px #ececec;
   }
 
+  .main-menu__logo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .main-menu__logo {
+    margin-left: 60px;
+    margin-right: auto;
+  }
+
   .main-menu__item--logo {
-    padding: 22px 30px 22px 116px;
+    padding: 17px;
+    padding-bottom: 17px;
   }
 
   .main-menu__item--new {
@@ -28,15 +40,16 @@
   }
 
   .main-menu__link {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+
     @include font(17px, 24px, 700, $black);
   }
-
 }
 
 @media (min-width: 768px) {
-
   .main-menu {
-
     .main-menu__list {
       display: flex;
       flex-wrap: wrap;
@@ -105,15 +118,12 @@
     .main-menu__item--form {
       order: 5;
     }
-
   }
-
 }
 
 
 @media (min-width: 1150px) {
   .main-menu {
-
     .main-menu__item {
       padding-bottom: 40px;
       padding-top: 35px;
@@ -175,6 +185,5 @@
     .main-menu__item--sale {
       order: 7;
     }
-
   }
 }

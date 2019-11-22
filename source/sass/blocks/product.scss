@@ -1,14 +1,91 @@
 .product {
+  padding-bottom: 28px;
+  border: 1px solid #ececec;
+
   .product__title {
+    margin: 0;
+    padding: 0;
+
     @include font(17px, 24px, 700, $black);
   }
 
+  .product__wrapper {
+    padding-top: 15px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
   .product__description {
+    display: block;
+    margin-bottom: 17px;
     font-size: 13px;
     line-height: 30px;
   }
 
   .product__price {
+    display: block;
+    padding-top: 20px;
+
     @include font(15px, 24px, 700, $black);
+    border-top: 1px solid #ececec;
+  }
+}
+
+@media (min-width: 768px) {
+  .product {
+    display: flex;
+    padding-bottom: 0;
+
+    // временно
+    .product__image-link {
+      display: block;
+      width: 334px;
+      height: 334px;
+      background: yellowgreen;
+    }
+
+    .product__wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-top: 23px;
+    }
+
+    .product__title {
+      width: 250px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    .product__description {
+      margin-bottom: auto;
+      font-size: 15px;
+    }
+
+    .product__price {
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .product {
+    display: block;
+    padding-bottom: 25px;
+
+    // временно
+    .product__image-link {
+      width: 316px;
+      height: 462px;
+    }
+
+    .product__wrapper {
+      min-height: 172px;
+    }
+
+    .product__price {
+      font-size: 17px;
+      margin-bottom: 0;
+    }
   }
 }

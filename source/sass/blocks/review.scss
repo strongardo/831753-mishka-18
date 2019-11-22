@@ -1,13 +1,48 @@
 .review {
   .review__text {
     margin: 0;
+    margin-bottom: 28px;
   }
 
   .review__author {
+    display: block;
+    margin-bottom: 5px;
+
     @include font(17px, 24px, 700, $black);
   }
 
   .review__link {
     font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    .review__text {
+      margin-bottom: 58px;
+      font-size: 17px;
+    }
+
+    .review__author {
+      font-size: 18px;
+    }
+
+    .review__link {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .review {
+    width: 1150px;
+
+    .review__text {
+      width: 800px;
+    }
   }
 }
