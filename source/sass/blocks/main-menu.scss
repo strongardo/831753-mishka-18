@@ -5,11 +5,16 @@
     margin: 0;
   }
 
+  .main-menu__list--3 {
+    display: none;
+  }
+
   .main-menu__item {
     display: block;
     padding-top: 32px;
     padding-bottom: 30px;
     border-bottom: solid 1px #ececec;
+
   }
 
   .main-menu__logo-wrapper {
@@ -31,17 +36,9 @@
     padding-bottom: 17px;
   }
 
-  .main-menu__item--new {
-    display: none;
-  }
-
-  .main-menu__item--sale {
-    display: none;
-  }
-
   .main-menu__link {
-    width: 200px;
     display: block;
+    width: 200px;
     margin: 0 auto;
 
     @include font(17px, 24px, 700, $black);
@@ -50,9 +47,28 @@
 
 @media (min-width: 768px) {
   .main-menu {
-    .main-menu__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    .main-menu__logo-wrapper {
+      display: block;
+      width: 321px;
+      margin: 0;
+      padding: 0;
+      padding-top: 22px;
+      padding-bottom: 20px;
+    }
+
+    .main-menu__list--1,
+    .main-menu__list--2 {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .main-menu__list--1 {
+      position: absolute;
+      top: 105px;
     }
 
     .main-menu__item {
@@ -60,21 +76,25 @@
       border-bottom: none;
     }
 
-    .main-menu__item--logo {
-      order: 1;
-      width: 334px;
-      padding-bottom: 22px;
-      padding-top: 22px;
-      border-bottom: solid 1px #ececec;
+    .main-menu__link {
+      width: auto;
+    }
+
+    .main-menu__logo {
+      margin: 0;
     }
 
     .main-menu__item--search {
-      order: 2;
-      display: block;
       width: 82px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+    }
 
-      border: 1px solid #ececec;
-      border-top: none;
+    .main-menu__item--cart {
+      width: 265px;
+      padding-left: 83px;
+      padding-top: 31px;
+      padding-bottom: 26px;
     }
 
     .main-menu__text--search {
@@ -92,31 +112,13 @@
       display: none;
     }
 
-    .main-menu__item--cart {
-      order: 3;
-      padding-top: 36px;
-      padding-left: 50px;
-      border-bottom: solid 1px #ececec;
-    }
-
-    .main-menu__item--catalog,
-    .main-menu__item--form {
-      padding-top: 20px;
-      font-size: 15px;
+    .main-menu__item--catalog {
+      margin-right: 37px;
     }
 
     .main-menu__link--catalog,
     .main-menu__link--form {
       font-size: 15px;
-    }
-
-    .main-menu__item--catalog {
-      margin-right: 36px;
-      order: 4;
-    }
-
-    .main-menu__item--form {
-      order: 5;
     }
   }
 }
@@ -124,23 +126,54 @@
 
 @media (min-width: 1150px) {
   .main-menu {
+    .main-menu__list--1 {
+      position: static;
+      top: 105px;
+      order: 1;
+    }
+
     .main-menu__item {
-      padding-bottom: 40px;
-      padding-top: 35px;
+      padding-top: 31px;
+      padding-bottom: 34px;
+    }
+
+    .main-menu__logo-wrapper {
+      display: block;
+      order: 2;
+      width: 326px;
+      padding-top: 9px;
+      padding-bottom: 7px;
+      padding-left: 75px;
+    }
+
+    .main-menu__list--2 {
+      order: 3;
+    }
+
+    .main-menu__list--3 {
+      position: absolute;
+      top: 105px;
+      display: flex;
+      order: 4;
     }
 
     .main-menu__item--catalog {
-      order: 1;
+      width: 185px;
       margin-right: 0;
-      padding-right: 35px;
       border-right: 1px solid #ececec;
-      border-bottom: 1px solid #ececec;
     }
 
     .main-menu__item--form {
-      order: 2;
-      padding-left: 42px;
-      border-bottom: 1px solid #ececec;
+      padding-left: 35px;
+    }
+
+    .main-menu__item--new,
+    .main-menu__item--sale {
+      padding: 0;
+    }
+
+    .main-menu__item--new {
+      margin-right: 60px;
     }
 
     .main-menu__link--catalog,
@@ -148,42 +181,9 @@
       font-size: 17px;
     }
 
-    .main-menu__item--logo {
-      order: 3;
-      width: 285px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-
-      text-align: center;
-    }
-
-    .main-menu__item--search {
-      order: 4;
-      width: 85px;
-    }
-
-    .main-menu__item--cart {
-      order: 5;
-    }
-
-
-    .main-menu__item--new,
-    .main-menu__item--sale {
-      display: block;
-    }
-
     .main-menu__link--new,
     .main-menu__link--sale {
       font-size: 15px;
-    }
-
-    .main-menu__item--new {
-      order: 6;
-      margin-right: 55px;
-    }
-
-    .main-menu__item--sale {
-      order: 7;
     }
   }
 }
