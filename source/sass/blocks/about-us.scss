@@ -1,6 +1,8 @@
 .about-us {
+  margin-bottom: 55px;
+
   .about-us__title {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .about-us__list {
@@ -12,9 +14,15 @@
 
   .about-us__item {
     width: 250px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    margin-bottom: 30px;
 
     @include font(17px, 20px, 700, $black);
+    background: greenyellow;
+  }
+
+  .about-us__item:last-child {
+    margin-bottom: 0;
   }
 
   .about-us__item--flower {
@@ -56,13 +64,17 @@
 
     .about-us__item {
       width: 300px;
-      padding-bottom: 54px;
+      margin-bottom: 54px;
       font-size: 20px;
       line-height: 22px;
     }
 
     .about-us__item:nth-child(2n+1) {
       margin-right: 18px;
+    }
+
+    .about-us__item:last-child {
+      margin-bottom: 54px;
     }
 
     .about-us__item--flower {
@@ -93,13 +105,8 @@
 
 @media (min-width: 1150px) {
   .about-us {
-    .about-us__title {
-      margin-left: 100px;
-    }
-
-    .about-us__list {
-      width: 768px;
-      margin-left: 100px;
+    .container {
+      padding-left: 218px;
     }
 
     .about-us__item:nth-child(2n+1) {

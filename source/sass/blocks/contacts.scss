@@ -1,19 +1,18 @@
 .contacts {
   margin-bottom: 40px;
 
-  .contacts__title {
+  .contacts__combiner {
     width: 320px;
     margin: 0 auto;
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  .contacts__title {
     margin-bottom: 24px;
   }
 
   .contacts__inform {
-    width: 320px;
-    margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
     margin-bottom: 33px;
   }
 
@@ -30,6 +29,10 @@
     width: 70px;
   }
 
+  .contacts__value--email {
+    border-bottom: 1px solid #62d1ba;
+  }
+
   .contacts__type--address {
     vertical-align: top;
   }
@@ -42,21 +45,20 @@
 
   .contacts__write-button {
     margin: 0 auto;
+    padding-left: 52px;
+    padding-right: 52px;
   }
 }
 
 @media (min-width: 768px) {
   .contacts {
-    .contacts__title {
+    .contacts__combiner {
       width: 768px;
       padding-right: 50px;
       padding-left: 50px;
     }
 
     .contacts__inform {
-      width: 768px;
-      padding-right: 50px;
-      padding-left: 50px;
       margin-bottom: 53px;
       font-size: 17px;
     }
@@ -65,8 +67,9 @@
       margin-right: 50px;
     }
 
-    .contacts__value--address {
-      width: 220px;
+    .contacts__write-button {
+      padding-left: 42px;
+      padding-right: 42px;
     }
   }
 
@@ -77,30 +80,21 @@
 
 @media (min-width: 1150px) {
   .contacts {
+    position: relative;
+
     .contacts__wrapper {
       display: flex;
+      flex-wrap: wrap;
       width: 1150px;
       margin: 0 auto;
       padding-right: 50px;
-      padding-left: 50px;
+      padding-left: 198px;
     }
 
-    .contacts__title-wrapper {
-      padding-left: 100px;
-      padding-top: 50px;
-      margin-right: auto;
-    }
-
-    .contacts__title {
+    .contacts__combiner {
       width: auto;
-      padding-left: 0;
       padding-right: 0;
-    }
-
-    .contacts__inform {
-      width: auto;
       padding-left: 0;
-      padding-right: 0;
     }
 
     .contacts__map {
@@ -108,7 +102,11 @@
     }
 
     .contacts__write-button {
-      margin: 0 auto;
+      position: absolute;
+      left: 322px;
+      bottom: 33px;
+      padding-left: 42px;
+      padding-right: 42px;
     }
   }
 

@@ -40,13 +40,13 @@
     background-color: #fafafa;
 
     .categories__list {
-      display: flex;
-      width: 768px;
+      width: 668px;
       margin: 0 auto;
+      display: flex;
     }
 
     .categories__link {
-      width: 384px;
+      width: 334px;
       margin: 0;
       padding-right: 0;
       padding-left: 35px;
@@ -57,11 +57,11 @@
 @media (min-width: 1150px) {
   .categories {
     .categories__list {
-      width: 1150px;
+      width: 1050px;
     }
 
     .categories__link {
-      width: 575px;
+      width: 525px;
     }
   }
 }
