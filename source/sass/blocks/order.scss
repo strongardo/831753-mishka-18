@@ -1,34 +1,216 @@
 .order {
+  padding-top: 21px;
+  padding-bottom: 55px;
+
   .order__item {
     border: none;
     padding: 0;
+    margin-bottom: 10px;
   }
 
+  .order__item:last-child {
+    margin-bottom: 0;
+  }
+
+  // Мы будем рады...
   .order__caption {
+    margin-bottom: 23px;
     font-size: 13px;
   }
 
+  // Тип, цвет, фио, tel, email, доп
   .order__item-title {
+    display: block;
+    margin-bottom: 18px;
+
     @include font(17px, 17px, 700, $blue);
     text-transform: uppercase;
   }
 
+  .order__item-title--tel,
+  .order__item-title--email {
+    margin-bottom: 3px;
+  }
+
+  // Названия полей черным цветом
   .order__label {
+    display: block;
+    margin-bottom: 22px;
+    // padding-left: 62px;
+
     @include font(17px, 18px, 700, $black);
   }
 
-  .order__input {
-    font-size: 17px;
-    line-height: 18px;
+  .order__label--fio {
+    padding-left: 0;
+    margin-bottom: 0;
   }
 
-  .order__input--tel {
+  // Текстовые поля
+  .order__input {
+    width: 100%;
+    padding-bottom: 12px;
+    padding-top: 14px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 18px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    background: none;
+  }
+
+  // textaria
+  .order__input--extra {
+    min-height: 142px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #000000;
+  }
+
+  .order__input--tel,
+  .order__input--email {
     font-size: 19px;
     line-height: 19px;
   }
 
+  // *Поля обязательны для заполнения
   .order__description {
+    display: block;
+    margin-bottom: 25px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .order__submit-button {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .order {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    .order__item {
+      margin-bottom: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .order__item:last-child {
+      padding-bottom: 0;
+    }
+
+    .order__item--color,
+    .order__item--tel-email {
+      background-color: #f1f1f1;
+    }
+
+    .order__wrapper {
+      display: flex;
+    }
+
+    .order__wrapper--bottom {
+      align-items: baseline;
+    }
+
+    .order__combiner--color {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .order__combiner--fio {
+      width: 100%;
+    }
+
+    .order__caption {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 53px;
+    }
+
+    .order__item-title {
+      margin-bottom: 0;
+      margin-right: 130px;
+      width: 70px;
+    }
+
+    .order__label {
+      margin-bottom: 24px;
+      font-size: 19px;
+      line-height: 19px;
+    }
+
+    .order__label--color {
+      width: 170px;
+      margin-right: 65px;
+    }
+
+    .order__label--fio {
+      display: flex;
+      align-items: baseline;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    .order__input {
+      margin-bottom: 30px;
+      font-size: 19px;
+      line-height: 19px;
+    }
+
+    .order__input--fio {
+      width: 100%;
+      margin-left: 26px;
+    }
+
+    .order__input--extra {
+      margin-bottom: 53px;
+    }
+
+    .order__submit-button {
+      margin-right: 136px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .order__description {
+      order: 1;
+      margin-bottom: 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .order {
+    padding-top: 119px;
+
+    .container {
+      width: 815px;
+    }
+
+    .order__caption {
+      padding-left: 190px;
+    }
+
+    .order__item-title {
+      margin-right: 82px;
+    }
+
+    .order__label--color {
+      width: 120px;
+    }
+
+    .order__input--extra {
+      margin-bottom: 49px;
+    }
+
+    .order__submit-button {
+      margin-left: 139px;
+      margin-right: 44px;
+    }
   }
 }

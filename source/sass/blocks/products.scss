@@ -1,6 +1,34 @@
 .products {
+  margin-bottom: 22px;
+
+  .products__item {
+    margin-bottom: 30px;
+  }
+
+  .products__item:last-child {
+    margin-bottom: 0;
+  }
+
   .products__list {
     list-style: none;
     padding: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .products {
+    .products__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .products__item {
+      margin-bottom: 0;
+      margin-right: 48px;
+    }
+
+    .products__item:last-child {
+      margin-right: 0;
+    }
   }
 }

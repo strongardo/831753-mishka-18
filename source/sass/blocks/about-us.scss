@@ -1,12 +1,116 @@
 .about-us {
+  margin-bottom: 55px;
+
+  .about-us__title {
+    margin-bottom: 30px;
+  }
+
   .about-us__list {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     list-style: none;
   }
 
   .about-us__item {
-    padding-bottom: 30px;
+    width: 250px;
+    padding-top: 60px;
+    margin-bottom: 30px;
 
     @include font(17px, 20px, 700, $black);
+    background: greenyellow;
+  }
+
+  .about-us__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-us__item--flower {
+    order: 1;
+  }
+
+  .about-us__item--ball {
+    order: 4;
+  }
+
+  .about-us__item--ruble {
+    order: 2;
+  }
+
+  .about-us__item--rocket {
+    order: 5;
+  }
+
+  .about-us__item--heart {
+    order: 3;
+  }
+
+  .about-us__item--present {
+    order: 6;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    .about-us__title {
+      margin-bottom: 43px;
+    }
+
+    .about-us__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+
+    .about-us__item {
+      width: 300px;
+      margin-bottom: 54px;
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    .about-us__item:nth-child(2n+1) {
+      margin-right: 18px;
+    }
+
+    .about-us__item:last-child {
+      margin-bottom: 54px;
+    }
+
+    .about-us__item--flower {
+      order: 1;
+    }
+
+    .about-us__item--ball {
+      order: 2;
+    }
+
+    .about-us__item--ruble {
+      order: 3;
+    }
+
+    .about-us__item--rocket {
+      order: 4;
+    }
+
+    .about-us__item--heart {
+      order: 5;
+    }
+
+    .about-us__item--present {
+      order: 6;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    .container {
+      padding-left: 218px;
+    }
+
+    .about-us__item:nth-child(2n+1) {
+      margin-right: 40px;
+    }
   }
 }

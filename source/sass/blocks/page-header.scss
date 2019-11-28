@@ -1,0 +1,29 @@
+.page-header {
+  position: relative;
+
+  .page-header__delivery {
+    position: absolute;
+    top: 105px;
+    right: 50px;
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .page-header__delivery {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1150px;
+  }
+}
