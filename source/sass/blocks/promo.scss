@@ -4,10 +4,8 @@
   background-color: #fafafa;
 
   .promo__title {
-    width: 320px;
+    width: 260px;
     margin: 0 auto;
-    padding-right: 30px;
-    padding-left: 30px;
 
     @include font(27px, 30px, 700, $black);
     text-align: center;

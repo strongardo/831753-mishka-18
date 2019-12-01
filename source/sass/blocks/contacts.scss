@@ -53,9 +53,25 @@
 @media (min-width: 768px) {
   .contacts {
     .contacts__combiner {
+      position: relative;
       width: 768px;
       padding-right: 50px;
       padding-left: 50px;
+    }
+
+    .contacts__combiner::before {
+      content: "";
+      position: absolute;
+      top: -14px;
+      right: 50px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+
+    .contacts__title {
+      margin-bottom: 44px;
     }
 
     .contacts__inform {
@@ -95,6 +111,11 @@
       width: auto;
       padding-right: 0;
       padding-left: 0;
+    }
+
+    .contacts__combiner::before {
+      top: -14px;
+      left: -110px;
     }
 
     .contacts__map {

@@ -18,10 +18,29 @@
   }
 
   .reviews__button {
+    position: relative;
     width: 130px;
     height: 52px;
     background: none;
     border: 1px solid #ececec;
+  }
+
+  .reviews__button::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 38px;
+    width: 50px;
+    height: 26px;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__button--left::before {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  .reviews__button--right::before {
+    background-image: url("../img/icon-right-arrow.svg");
   }
 }
 
@@ -59,6 +78,10 @@
       position: absolute;
       bottom: 40px;
       right: 50px;
+    }
+
+    .reviews__button {
+      border: none;
     }
   }
 }
