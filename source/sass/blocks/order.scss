@@ -20,6 +20,7 @@
 
   // Тип, цвет, фио, tel, email, доп
   .order__item-title {
+    position: relative;
     display: block;
     margin-bottom: 18px;
 
@@ -27,18 +28,90 @@
     text-transform: uppercase;
   }
 
-  .order__item-title--tel,
-  .order__item-title--email {
-    margin-bottom: 3px;
+  .order__item-title::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 198px;
+    height: 1px;
+    background-color: #63d1bb;
   }
+
+  // .order__item-title--tel,
+  // .order__item-title--email {
+  //   margin-bottom: 3px;
+  // }
 
   // Названия полей черным цветом
   .order__label {
     display: block;
     margin-bottom: 22px;
-    // padding-left: 62px;
 
     @include font(17px, 18px, 700, $black);
+  }
+
+  .order__label--type,
+  .order__label--color {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    padding-left: 62px;
+  }
+
+  .order__label--type {
+    width: 270px;
+  }
+
+  .order__label--color {
+    width: 240px;
+  }
+
+  .order__label--type::before,
+  .order__label--color::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    border: 2px solid #444;
+    border-radius: 50%;
+  }
+
+  .order__label--color::before {
+    border-radius: 0;
+    width: 36px;
+    height: 35px;
+  }
+
+  .order__input--type:checked+.order__label--type::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+    transform: translateY(-50%);
+  }
+
+  .order__input--color:checked+.order__label--color::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 10px;
+    width: 33px;
+    height: 22px;
+    background: url(../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    transform: translateY(-50%);
   }
 
   .order__label--fio {
@@ -46,17 +119,26 @@
     margin-bottom: 0;
   }
 
+  .order-wrapper--tel,
+  .order-wrapper--email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 40px;
+  }
+
   // Текстовые поля
   .order__input {
     width: 100%;
+    margin-bottom: 40px;
     padding-bottom: 12px;
     padding-top: 14px;
-    margin-bottom: 20px;
     font-size: 17px;
     line-height: 18px;
     border: none;
-    border-bottom: 2px solid #000000;
     background: none;
+    border-bottom: 2px solid #000000;
   }
 
   // textaria
@@ -69,8 +151,11 @@
 
   .order__input--tel,
   .order__input--email {
+    width: auto;
+    margin-bottom: 0;
     font-size: 19px;
     line-height: 19px;
+    border-bottom: none;
   }
 
   // *Поля обязательны для заполнения
@@ -136,15 +221,42 @@
       width: 70px;
     }
 
+    .order__item-title--type {
+      margin-right: 104px;
+    }
+
+    .order__item-title::before {
+      display: none;
+    }
+
     .order__label {
       margin-bottom: 24px;
       font-size: 19px;
       line-height: 19px;
     }
 
+    .order__label--type,
     .order__label--color {
-      width: 170px;
-      margin-right: 65px;
+      padding-left: 81px;
+      min-height: 64px;
+    }
+
+    .order__label--type::before,
+    .order__label--color::before {
+      width: 48px;
+      height: 48px;
+    }
+
+    .order__input--type:checked+.order__label--type::after {
+      left: 14px;
+      width: 22px;
+      height: 22px;
+      transform: translateY(-50%);
+    }
+
+    .order__input--color:checked+.order__label--color::after {
+      background-size: 33px 22px;
+      transform: translateY(-50%);
     }
 
     .order__label--fio {
@@ -158,6 +270,12 @@
       margin-bottom: 30px;
       font-size: 19px;
       line-height: 19px;
+    }
+
+    .order__input--tel,
+    .order__input--email {
+      margin-bottom: 0;
+      flex-grow: 1;
     }
 
     .order__input--fio {
@@ -201,7 +319,7 @@
     }
 
     .order__label--color {
-      width: 120px;
+      width: 195px;
     }
 
     .order__input--extra {
