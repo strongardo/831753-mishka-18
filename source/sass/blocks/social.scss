@@ -5,6 +5,8 @@
 
   margin: 0;
   padding: 0;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
 
   list-style: none;
 }
@@ -39,4 +41,11 @@
 
 .social__link--tw {
   background-image: url("../img/icon-twitter.svg");
+}
+
+@media (min-width: 768px) {
+  .social {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
