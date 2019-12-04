@@ -22,20 +22,22 @@
     line-height: 30px;
   }
 
-  .product__price {
-    position: relative;
-    display: block;
-    padding-top: 20px;
-
-    @include font(15px, 24px, 700, $black);
+  .product__group {
+    display: flex;
+    align-items: baseline;
     border-top: 1px solid #ececec;
   }
 
-  .product__price::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  .product__price {
+    display: block;
+    padding-top: 20px;
+    margin-right: auto;
+
+    @include font(15px, 24px, 700, $black);
+  }
+
+  .product__cart-button {
+    display: block;
     width: 21px;
     height: 18px;
     background-image: url("../img/icon-cart.svg");

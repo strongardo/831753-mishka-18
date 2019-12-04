@@ -83,8 +83,10 @@
                 <h3 class="product__title">Зайчик-попрыгайчик</h3>
               </a>
               <span class="product__description">Рост 30 см, вес 200 г</span>
-              <span class="product__price">1 200 руб.</span>
-              <a class="product_cart-button" href="#"></a>
+              <div class="product__group">
+                <span class="product__price">1 200 руб.</span>
+                <a class="product__cart-button" href="#"></a>
+              </div>
             </div>
           </li>
           <li class="products__item product">
@@ -97,8 +99,10 @@
                 <h3 class="product__title">Корзинка для белья</h3>
               </a>
               <span class="product__description">Диаметр 15 см, высота 10 см</span>
-              <span class="product__price">690 руб.</span>
-              <a class="product_cart-button" href="#"></a>
+              <div class="product__group">
+                <span class="product__price">690 руб.</span>
+                <a class="product__cart-button" href="#"></a>
+              </div>
             </div>
           </li>
           <li class="products__item product">
@@ -111,8 +115,10 @@
                 <h3 class="product__title">Большая корзинка для игрушек</h3>
               </a>
               <span class="product__description">Диаметр 30 см, высота 30 см</span>
-              <span class="product__price">1 500 руб.</span>
-              <a class="product_cart-button" href="#"></a>
+              <div class="product__group">
+                <span class="product__price">1 500 руб.</span>
+                <a class="product__cart-button" href="#"></a>
+              </div>
             </div>
           </li>
         </ul>
@@ -168,23 +174,26 @@
     </div>
   </footer>
 
-  <section class="modal">
-    <h2 class="modal__title section-title">Добавить в корзину</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST">
+  <section class="modal modal--close">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="modal__size-choice">
         <legend class="modal__legend">Выберите размер:</legend>
-        <input type="radio" name="size" id="size-s" class="visually-hidden">
-        <label for="size-s" class="modal__button">S</label>
-        <input type="radio" name="size" id="size-m" class="visually-hidden">
-        <label for="size-m" class="modal__button">M</label>
-        <input type="radio" name="size" id="size-l" class="visually-hidden">
-        <label for="size-l" class="modal__button">L</label>
+        <div class="modal__wrapper">
+          <input type="radio" name="size" id="size-s" class="visually-hidden">
+          <label for="size-s" class="modal__button">S</label>
+          <input type="radio" name="size" id="size-m" class="visually-hidden">
+          <label for="size-m" class="modal__button">M</label>
+          <input type="radio" name="size" id="size-l" class="visually-hidden">
+          <label for="size-l" class="modal__button">L</label>
+        </div>
       </fieldset>
       <button type="submit" class="modal__submit-button button">Добавить</button>
     </form>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/modal-catalog.js"></script>
 
 </body>
 
