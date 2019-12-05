@@ -83,7 +83,7 @@
     .reviews__write-button {
       position: absolute;
       top: 80px;
-      right: 50px;
+      right: 30px;
       padding-left: 41px;
       padding-right: 41px;
     }
@@ -95,7 +95,20 @@
     }
 
     .reviews__button {
+      width: 50px;
       border: none;
+    }
+
+    .reviews__button--left {
+      margin-right: 38px;
+    }
+
+    .reviews__button--left::before {
+      left: 0;
+    }
+
+    .reviews__button--right::before {
+      left: 0;
     }
   }
 

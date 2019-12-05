@@ -87,12 +87,14 @@
       width: 18px;
       height: 18px;
       background-image: url("../img/icon-search.svg");
+      opacity: 0.2;
     }
 
     .main-menu__text--cart::before {
       width: 21px;
       height: 18px;
       background-image: url("../img/icon-cart.svg");
+      opacity: 0.2;
     }
   }
 

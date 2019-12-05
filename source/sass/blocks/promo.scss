@@ -4,8 +4,8 @@
   background-color: #fafafa;
 
   .promo__title {
-    width: 260px;
-    margin: 0 auto;
+    // width: 260px;
+    // margin: 0 auto;
 
     @include font(27px, 30px, 700, $black);
     text-align: center;
@@ -26,9 +26,9 @@
     border-top: solid 1px #ececec;
 
     .promo__title {
-      width: 590px;
-      padding-right: 50px;
-      padding-left: 50px;
+      // width: 590px;
+      // padding-right: 50px;
+      // padding-left: 50px;
       font-size: 43px;
       line-height: 50px;
       text-align: center;
@@ -49,7 +49,7 @@
     min-height: 254px;
 
     .promo__title {
-      width: 670px;
+      // width: 670px;
       font-size: 53px;
       line-height: 57px;
     }
