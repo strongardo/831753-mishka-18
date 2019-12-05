@@ -70,7 +70,7 @@
     left: 0;
     width: 40px;
     height: 40px;
-    border: 2px solid #444;
+    border: 2px solid #444444;
     border-radius: 50%;
   }
 
@@ -78,7 +78,7 @@
     border-radius: 0;
   }
 
-  .order__input--type:checked+.order__label--type::after {
+  .order__input--type:checked + .order__label--type::after {
     content: "";
     position: absolute;
     display: block;
@@ -90,7 +90,7 @@
     background-color: #62d1ba;
   }
 
-  .order__input--color:checked+.order__label--color::after {
+  .order__input--color:checked + .order__label--color::after {
     content: "";
     position: absolute;
     display: block;
@@ -98,7 +98,7 @@
     left: 10px;
     width: 33px;
     height: 22px;
-    background: url(../img/icon-tick.svg);
+    background: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px 22px;
   }
@@ -131,9 +131,6 @@
 
   .order__input--extra {
     width: 100%;
-  }
-
-  .order__input--extra {
     min-height: 142px;
     margin-bottom: 10px;
     padding: 10px;
@@ -250,14 +247,14 @@
       height: 48px;
     }
 
-    .order__input--type:checked+.order__label--type::after {
+    .order__input--type:checked + .order__label--type::after {
       top: 21px;
       left: 13px;
       width: 22px;
       height: 22px;
     }
 
-    .order__input--color:checked+.order__label--color::after {
+    .order__input--color:checked + .order__label--color::after {
       top: 20px;
       background-size: 33px 22px;
     }
