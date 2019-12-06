@@ -56,19 +56,19 @@
 
 @media (max-width: 767px) {
   .main-menu--opened {
-    position: relative;
+    // position: relative;
 
-    .main-menu__list--1,
-    .main-menu__list--2 {
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      background-color: #fafafa;
-    }
+    // .main-menu__list--1,
+    // .main-menu__list--2 {
+    //   position: absolute;
+    //   z-index: 1;
+    //   width: 100%;
+    //   background-color: #fafafa;
+    // }
 
-    .main-menu__list--2 {
-      top: 260px;
-    }
+    // .main-menu__list--2 {
+    //   top: 260px;
+    // }
 
     .main-menu__text--search,
     .main-menu__text--cart {
