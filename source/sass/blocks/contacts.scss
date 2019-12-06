@@ -122,9 +122,13 @@
       width: 525px;
     }
 
+    .contacts__button-container {
+      position: relative;
+    }
+
     .contacts__write-button {
       position: absolute;
-      left: 322px;
+      left: 222px;
       bottom: 33px;
       padding-left: 42px;
       padding-right: 42px;
