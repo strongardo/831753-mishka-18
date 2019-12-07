@@ -28,6 +28,11 @@
     margin-right: auto;
   }
 
+  .logo__image {
+    width: 86px;
+    height: 35px;
+  }
+
   .main-menu__link {
     display: block;
     padding-top: 32px;
@@ -118,6 +123,11 @@
 
     .main-menu__logo {
       margin: 0;
+    }
+
+    .logo__image {
+      width: 113px;
+      height: 46px;
     }
 
     .burger-button {
@@ -230,6 +240,11 @@
 
     .main-menu__logo-wrapper {
       order: 2;
+    }
+
+    .logo__image {
+      width: 149px;
+      height: 72px;
     }
 
     .main-menu__combiner {
