@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,38 +13,50 @@
   <header class="page-header">
     <nav class="page-header__main-menu main-menu">
       <div class="main-menu__logo-wrapper">
-        <a class="main-menu__logo">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35"
-            alt="Логотип интернет-магазина 'Мишка'">
-        </a>
-        <button class="main-menu__burger-button burger-button" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
+        <div class="main-menu__combiner">
+          <a class="main-menu__logo">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35"
+              alt="Логотип интернет-магазина 'Мишка'">
+          </a>
+          <button class="main-menu__burger-button burger-button burger-button--open" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
+        </div>
       </div>
       <ul class="main-menu__list main-menu__list--1">
         <li class="main-menu__item main-menu__item--catalog">
-          <a href="catalog.html" class="main-menu__link main-menu__link--catalog">Каталог товаров</a>
+          <a href="catalog.html" class="main-menu__link main-menu__link--catalog">
+            <span class="main-menu__text main-menu__text--catalog">Каталог товаров</span>
+          </a>
         </li>
         <li class="main-menu__item main-menu__item--form">
-          <a href="form.html" class="main-menu__link main-menu__link--form">Вязание на заказ</a>
+          <a href="form.html" class="main-menu__link main-menu__link--form">
+            <span class="main-menu__text main-menu__text--form"> Вязание на заказ</span>
+          </a>
         </li>
       </ul>
       <ul class="main-menu__list main-menu__list--2">
         <li class="main-menu__item main-menu__item--search">
-          <a href="#" class="main-menu__link">
+          <a href="#" class="main-menu__link main-menu__link--search">
             <span class="main-menu__text main-menu__text--search">Поиск по сайту</span>
           </a>
         </li>
         <li class="main-menu__item main-menu__item--cart">
-          <a href="#" class="main-menu__link">Корзина: пока пуста</a>
+          <a href="#" class="main-menu__link  main-menu__link--cart">
+            <span class="main-menu__text main-menu__text--cart">Корзина: пока пуста</span>
+          </a>
         </li>
       </ul>
       <ul class="main-menu__list main-menu__list--3">
         <li class="main-menu__item main-menu__item--new">
-          <a href="#" class="main-menu__link main-menu__link--new">Новые поступления</a>
+          <a href="#" class="main-menu__link main-menu__link--new">
+            <span class="main-menu__text main-menu__text--new">Новые поступления</span>
+          </a>
         </li>
         <li class="main-menu__item main-menu__item--sale">
-          <a href="#" class="main-menu__link main-menu__link--sale">Распродажа</a>
+          <a href="#" class="main-menu__link main-menu__link--sale">
+            <span class="main-menu__text main-menu__text--sale">Распродажа</span>
+          </a>
         </li>
       </ul>
     </nav>
@@ -53,19 +64,31 @@
   </header>
   <main class="page-main">
     <div class="promo promo--home">
-      <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
+      <div class="container">
+        <h1 class="promo__title">Милые штуки ручной<br> работы для дома</h1>
+      </div>
     </div>
+
     <section class="categories">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="categories__list">
         <li class="categories__item categories__item--interior">
-          <a href="#" class="categories__link"><span class="categories__text">Предметы интерьера</span></a>
+          <a href="#" class="categories__link categories__link--interior">
+            <div class="container">
+              <span class="categories__text categories__text--interior">Предметы интерьера</span>
+            </div>
+          </a>
         </li>
         <li class="categories__item categories__item--toys">
-          <a href="#" class="categories__link"><span class="categories__text">Детские игрушки</span></a>
+          <a href="#" class="categories__link categories__link--toys">
+            <div class="container">
+              <span class="categories__text categories__text--toys">Детские игрушки</span>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
+
     <section class="popular-product">
       <div class="container">
         <div class="popular-product__wrapper popular-product__wrapper--title">
@@ -189,7 +212,9 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skg!4v1573297418584!5m2!1sru!2skg">
         </iframe>
       </div>
-      <button class="contacts__write-button button" type="button">Напишите нам</button>
+      <div class="container contacts__button-container">
+        <button class="contacts__write-button button" type="button">Напишите нам</button>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -224,21 +249,28 @@
       </p>
     </div>
   </footer>
-  <section class="modal">
-    <h2 class="modal__title section-title">Добавить в корзину</h2>
-    <form action="https://echo.htmlacademy.ru" method="POST">
+
+  <section class="modal modal--close">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="modal__size-choice">
         <legend class="modal__legend">Выберите размер:</legend>
-        <input type="radio" name="size" id="size-s" class="visually-hidden">
-        <label for="size-s" class="modal__button">S</label>
-        <input type="radio" name="size" id="size-m" class="visually-hidden">
-        <label for="size-m" class="modal__button">M</label>
-        <input type="radio" name="size" id="size-l" class="visually-hidden">
-        <label for="size-l" class="modal__button">L</label>
+        <div class="modal__wrapper">
+          <input type="radio" name="size" id="size-s" class="visually-hidden">
+          <label for="size-s" class="modal__button">S</label>
+          <input type="radio" name="size" id="size-m" class="visually-hidden">
+          <label for="size-m" class="modal__button">M</label>
+          <input type="radio" name="size" id="size-l" class="visually-hidden">
+          <label for="size-l" class="modal__button">L</label>
+        </div>
       </fieldset>
       <button type="submit" class="modal__submit-button button">Добавить</button>
     </form>
   </section>
+
+  <script src="js/menu.js"></script>
+  <script src="js/modal-index.js"></script>
+
 </body>
 
 </html>
