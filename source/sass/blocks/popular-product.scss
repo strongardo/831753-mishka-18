@@ -37,6 +37,8 @@
   }
 
   .popular-product__image {
+    width: 260px;
+    height: 315px;
     margin-bottom: 20px;
   }
 
@@ -117,8 +119,7 @@
       padding-right: 101px;
     }
 
-    //временно
-    img {
+    .popular-product__image {
       width: 333px;
       height: 404px;
     }
@@ -184,7 +185,7 @@
     }
 
     //временно
-    img {
+    .popular-product__image {
       width: 525px;
       height: 636px;
     }

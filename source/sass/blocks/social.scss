@@ -14,7 +14,11 @@
 .social__item {
   margin: 0;
   padding: 0;
-  margin-right: 28px;
+  margin-right: 31px;
+}
+
+.social__item:nth-child(2) {
+  margin-right: 23px;
 }
 
 .social__item:nth-child(3n) {
@@ -23,24 +27,13 @@
 
 .social__link {
   display: block;
-
   width: 30px;
   height: 30px;
-
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.social__link--fb {
-  background-image: url("../img/icon-fb.svg");
-}
-
-.social__link--in {
-  background-image: url("../img/icon-insta.svg");
-}
-
-.social__link--tw {
-  background-image: url("../img/icon-twitter.svg");
+.social__image--tw,
+.social__image--in {
+  margin-top: 5px;
 }
 
 @media (min-width: 768px) {

@@ -53,6 +53,11 @@
     padding-left: 26px;
     padding-right: 26px;
   }
+
+  .video__image {
+    width: 260px;
+    height: 150px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -83,8 +88,10 @@
 
     .video__container {
       margin-bottom: 40px;
-      background: yellowgreen;
-      //временно
+    }
+
+    .video__image {
+      width: 668px;
       height: 455px;
     }
   }
@@ -142,6 +149,11 @@
       margin-right: 0;
       padding-left: 45px;
       padding-right: 45px;
+    }
+
+    .video__image {
+      width: 682px;
+      height: 455px;
     }
   }
 }
