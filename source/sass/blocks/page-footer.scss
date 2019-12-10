@@ -12,13 +12,19 @@
     @include font(19px, 19px, 700, $black);
   }
 
-  .develop__title {
+  .page-footer__develop-title {
+    order: -1;
     margin-right: 20px;
   }
 
   .page-footer__logo {
     display: none;
   }
+}
+
+.page-footer__develop-link:active,
+.page-footer__develop-link:active + .page-footer__develop-title {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -38,6 +44,11 @@
       margin-right: 91px;
     }
   }
+
+  .page-footer__logo--not-index:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -49,5 +60,14 @@
     .page-footer__social {
       margin-right: 284px;
     }
+  }
+
+  .page-footer__logo--not-index:hover,
+  .page-footer__logo--not-index:focus {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo--not-index:active {
+    opacity: 0.3;
   }
 }

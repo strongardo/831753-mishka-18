@@ -49,7 +49,6 @@
     margin-right: 7px;
     padding-top: 17px;
     padding-bottom: 17px;
-    border: 2px solid $dark;
     text-align: center;
 
     @include font(17px, 17px, 700, $dark);
@@ -74,6 +73,15 @@
 
 .modal--close {
   display: none;
+}
+
+.modal__button {
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.modal__button:active,
+.modal__input:checked + .modal__button {
+  border-color: #62d1ba;
 }
 
 @media (min-width: 768px) {
@@ -109,5 +117,17 @@
       padding-left: 127px;
       padding-right: 128px;
     }
+  }
+}
+
+@media (min-width: 1150px) {
+  .modal__button:hover,
+  .modal__button:focus {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  .modal__button:active,
+  .modal__input:checked + .modal__button {
+    border-color: #62d1ba;
   }
 }

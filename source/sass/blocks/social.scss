@@ -29,6 +29,7 @@
   display: block;
   width: 30px;
   height: 30px;
+  color: #231f20;
 }
 
 .social__image--tw,
@@ -36,9 +37,25 @@
   margin-top: 5px;
 }
 
+.social__link:active {
+  color: #46c1ae;
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
   .social {
     padding-bottom: 0;
     border-bottom: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .social__link:hover,
+  .social__link:focus {
+    color: #46c1ae;
+  }
+
+  .social__link:active {
+    opacity: 0.3;
   }
 }
