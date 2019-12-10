@@ -80,7 +80,7 @@
 }
 
 .modal__button:active,
-.modal__input:checked+.modal__button {
+.modal__input:checked + .modal__button {
   border-color: #62d1ba;
 }
 
@@ -127,7 +127,7 @@
   }
 
   .modal__button:active,
-  .modal__input:checked+.modal__button {
+  .modal__input:checked + .modal__button {
     border-color: #62d1ba;
   }
 }

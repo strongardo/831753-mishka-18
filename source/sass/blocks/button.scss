@@ -21,12 +21,11 @@
 
 .button:active {
   background-color: #444444;
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
 @media (min-width: 1150px) {
-
   .button:hover,
   .button:focus {
     background-color: #444444;
@@ -34,6 +33,6 @@
   }
 
   .button:active {
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 }
