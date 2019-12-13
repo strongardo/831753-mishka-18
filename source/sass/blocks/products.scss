@@ -27,7 +27,7 @@
       margin-right: 48px;
     }
 
-    .products__item:last-child {
+    .products__item:nth-child(3n) {
       margin-right: 0;
     }
   }

@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -96,46 +98,62 @@
 
       <fieldset class="order__item">
         <div class="container order__wrapper">
-          <legend class="order__item-title order__item-title--type">Тип</legend>
+          <span class="order__item-title order__item-title--type">Тип</span>
           <div class="order__combiner">
             <input class="order__input order__input--type visually-hidden" type="radio" name="type" id="type-accessory"
               checked>
-            <label class="order__label order__label--type" for="type-accessory">Аксессуар для интерьера</label>
+            <label class="order__label order__label--type" for="type-accessory">
+              <span class="order__label-text">Аксессуар для интерьера</span>
+            </label>
             <input class="order__input order__input--type visually-hidden" type="radio" name="type" id="type-toy">
-            <label class="order__label  order__label--type" for="type-toy">Детская игрушка</label>
+            <label class="order__label  order__label--type" for="type-toy">
+              <span class="order__label-text">Детская игрушка</span>
+            </label>
           </div>
         </div>
       </fieldset>
 
       <fieldset class="order__item order__item--color">
         <div class="container container--color order__wrapper">
-          <legend class="order__item-title order__item-title--color">Цвет</legend>
+          <span class="order__item-title order__item-title--color">Цвет</span>
           <div class="order__combiner order__combiner--color">
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-white"
               id="color-white" checked>
-            <label class="order__label order__label--color" for="color-white">Белый</label>
+            <label class="order__label order__label--color" for="color-white">
+              <span class="order__label-text">Белый</span>
+            </label>
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-grey"
               id="color-grey" checked>
-            <label class="order__label order__label--color" for="color-grey">Серый</label>
+            <label class="order__label order__label--color" for="color-grey">
+              <span class="order__label-text">Серый</span>
+            </label>
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-tiffany"
               id="color-tiffany">
-            <label class="order__label order__label--color" for="color-tiffany">«Тиффани»</label>
+            <label class="order__label order__label--color" for="color-tiffany">
+              <span class="order__label-text">«Тиффани»</span>
+            </label>
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-black"
               id="color-black">
-            <label class="order__label order__label--color" for="color-black">Черный</label>
+            <label class="order__label order__label--color" for="color-black">
+              <span class="order__label-text">Черный</span>
+            </label>
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-pink"
               id="color-pink">
-            <label class="order__label order__label--color" for="color-pink">Розовый</label>
+            <label class="order__label order__label--color" for="color-pink">
+              <span class="order__label-text">Розовый</span>
+            </label>
             <input class="order__input order__input--color visually-hidden" type="checkbox" name="color-orange"
               id="color-orange">
-            <label class="order__label order__label--color" for="color-orange">Оранжевый</label>
+            <label class="order__label order__label--color" for="color-orange">
+              <span class="order__label-text">Оранжевый</span>
+            </label>
           </div>
         </div>
       </fieldset>
 
       <fieldset class="order__item order__item--fio">
         <div class="container order__wrapper">
-          <legend class="order__item-title order__item-title--fio">ФИО</legend>
+          <span class="order__item-title order__item-title--fio">ФИО</span>
           <div class="order__combiner order__combiner--fio">
             <label class="order__label order__label--fio" for="name">Имя:
               <input class="order__input order__input--fio" type="text" name="name" id="name"
@@ -157,17 +175,17 @@
         <div class="container">
           <div class="order__wrapper">
             <label class="order__item-title order__item-title--tel" for="tel">Тел</label>
-            <div class="order-wrapper order-wrapper--tel" tabindex="0">
+            <div class="order-wrapper order-wrapper--tel">
               <input class="order__input order__input--tel" type="tel" name="tel" id="tel"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+7[0-9]{10}" required>
               <svg class="order__icon" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="order__wrapper">
-            <label class="order__item-title order__item-title--email" for="email">Email</label>
-            <div class="order-wrapper order-wrapper--email" tabindex="0">
+            <label class="order__item-title order__item-title--email" for="email">E-mail</label>
+            <div class="order-wrapper order-wrapper--email">
               <input class="order__input order__input--email" type="email" name="email" id="email"
                 placeholder="Ваш Email*" required>
               <svg class="order__icon" width="32" height="32">
@@ -196,7 +214,7 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo page-footer__logo--not-index" href="index.html">
-        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="image"
+        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="img"
           aria-label="Логотип интернет-магазина 'Мишка'">
           <g>
             <path
@@ -253,6 +271,9 @@
     </div>
   </footer>
 
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
   <script src="js/menu.js"></script>
 
 </body>

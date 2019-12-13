@@ -15,11 +15,10 @@
   .about-us__item {
     position: relative;
     width: 250px;
-    padding-top: 60px;
-    margin-bottom: 30px;
+    padding-top: 55px;
+    margin-bottom: 28px;
 
     @include font(17px, 20px, 700, $black);
-    // background: greenyellow;
   }
 
   .about-us__item:last-child {
@@ -30,7 +29,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
     width: 55px;
     height: 40px;
     background-repeat: no-repeat;
@@ -49,6 +48,8 @@
   }
 
   .about-us__item--ball::before {
+    top: 2px;
+    left: 2px;
     background-image: url("../img/icon-feature-ball.svg");
   }
 
@@ -57,7 +58,10 @@
   }
 
   .about-us__item--ruble::before {
+    top: 0;
+    left: 0;
     background-image: url("../img/icon-feature-money.svg");
+    background-size: 47px 27px;
   }
 
   .about-us__item--rocket {
@@ -65,6 +69,8 @@
   }
 
   .about-us__item--rocket::before {
+    top: 4px;
+    left: -5px;
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
@@ -73,7 +79,10 @@
   }
 
   .about-us__item--heart::before {
+    top: 5px;
+    left: 5px;
     background-image: url("../img/icon-feature-heart.svg");
+    background-size: 44px 27px;
   }
 
   .about-us__item--present {
@@ -81,14 +90,20 @@
   }
 
   .about-us__item--present::before {
+    top: 2px;
+    left: 2px;
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
 @media (min-width: 768px) {
   .about-us {
+    margin-bottom: 25px;
+
     .about-us__title {
-      margin-bottom: 43px;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 47px;
     }
 
     .about-us__list {
@@ -99,13 +114,13 @@
 
     .about-us__item {
       width: 300px;
-      margin-bottom: 54px;
+      margin-bottom: 57px;
       font-size: 20px;
       line-height: 22px;
     }
 
     .about-us__item:nth-child(2n+1) {
-      margin-right: 18px;
+      margin-right: 34px;
     }
 
     .about-us__item:last-child {
@@ -141,11 +156,11 @@
 @media (min-width: 1150px) {
   .about-us {
     .container {
-      padding-left: 218px;
+      padding-left: 227px;
     }
 
     .about-us__item:nth-child(2n+1) {
-      margin-right: 40px;
+      margin-right: 50px;
     }
   }
 }

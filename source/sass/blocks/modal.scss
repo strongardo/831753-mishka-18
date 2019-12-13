@@ -54,7 +54,7 @@
     @include font(17px, 17px, 700, $dark);
   }
 
-  .modal__button:last-child {
+  .modal__button:nth-child(3n) {
     margin-right: 0;
   }
 

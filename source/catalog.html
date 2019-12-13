@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -107,11 +109,13 @@
               </picture>
             </a>
             <div class="product__wrapper">
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Зайчик-попрыгайчик</h3>
-              </a>
-              <span class="product__description">Рост 30 см, вес 200 г</span>
-              <div class="product__group">
+              <div class="product__group product__group--top">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Зайчик-попрыгайчик</h3>
+                </a>
+                <span class="product__description">Рост 30 см, вес 200 г</span>
+              </div>
+              <div class="product__group product__group--bottom">
                 <span class="product__price">1 200 руб.</span>
                 <a class="product__cart-button" href="#">
                   <svg class="product__icon" width="21" height="18">
@@ -138,11 +142,13 @@
               </picture>
             </a>
             <div class="product__wrapper">
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Корзинка для белья</h3>
-              </a>
-              <span class="product__description">Диаметр 15 см, высота 10 см</span>
-              <div class="product__group">
+              <div class="product__group product__group--top">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Корзинка для белья</h3>
+                </a>
+                <span class="product__description">Диаметр 15 см, высота 10 см</span>
+              </div>
+              <div class="product__group product__group--bottom">
                 <span class="product__price">690 руб.</span>
                 <a class="product__cart-button" href="#">
                   <svg class="product__icon" width="21" height="18">
@@ -169,11 +175,13 @@
               </picture>
             </a>
             <div class="product__wrapper">
-              <a class="product__title-link" href="#">
-                <h3 class="product__title">Большая корзинка для игрушек</h3>
-              </a>
-              <span class="product__description">Диаметр 30 см, высота 30 см</span>
-              <div class="product__group">
+              <div class="product__group product__group--top product__group--toys">
+                <a class="product__title-link" href="#">
+                  <h3 class="product__title">Большая корзинка для игрушек</h3>
+                </a>
+                <span class="product__description">Диаметр 30 см, высота 30 см</span>
+              </div>
+              <div class="product__group product__group--bottom">
                 <span class="product__price">1 500 руб.</span>
                 <a class="product__cart-button" href="#">
                   <svg class="product__icon" width="21" height="18">
@@ -208,7 +216,7 @@
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260"
-                height="150" alt="Зайчик-попрыгайчик">
+                height="150" alt="Видео">
             </picture>
           </div>
           <div class="video__combiner">
@@ -225,7 +233,7 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo page-footer__logo--not-index" href="index.html">
-        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="image"
+        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="img"
           aria-label="Логотип интернет-магазина 'Мишка'">
           <g>
             <path
@@ -300,6 +308,9 @@
     </form>
   </section>
 
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
   <script src="js/menu.js"></script>
   <script src="js/modal-catalog.js"></script>
 

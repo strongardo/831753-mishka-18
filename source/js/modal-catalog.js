@@ -1,8 +1,6 @@
 var popup = document.querySelector(".modal");
 var carts = document.querySelectorAll(".product__cart-button");
 
-console.log(carts.length);
-
 for (var i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", function (evt) {
     evt.preventDefault();
