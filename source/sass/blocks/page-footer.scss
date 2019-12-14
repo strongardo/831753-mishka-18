@@ -12,6 +12,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding-left: 38px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
 
     @include font(19px, 19px, 700, $black);
   }
@@ -34,7 +36,7 @@
 @media (min-width: 768px) {
   .page-footer {
     padding-top: 32px;
-    padding-bottom: 40px;
+    padding-bottom: 33px;
 
     .container {
       display: flex;
@@ -54,6 +56,8 @@
 
     .page-footer__develop {
       padding-left: 0;
+      padding-top: 0;
+      border-top: none;
     }
   }
 }

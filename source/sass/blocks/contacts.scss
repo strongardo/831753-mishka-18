@@ -17,7 +17,9 @@
     border-collapse: collapse;
   }
 
-  table, tr, td {
+  table,
+  tr,
+  td {
     margin: 0;
     padding: 0;
   }
@@ -143,6 +145,11 @@
       margin: 0 auto;
       padding-right: 50px;
       padding-left: 198px;
+    }
+
+    .contacts__type {
+      padding-left: 7px;
+      width: 85px;
     }
 
     .contacts__combiner {
