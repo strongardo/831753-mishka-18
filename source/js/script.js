@@ -1,3 +1,66 @@
+var menu = document.querySelector(".main-menu");
+var burger = document.querySelector(".burger-button");
+
+menu.classList.add("main-menu--closed");
+burger.classList.add("main-menu__burger-button--visible");
+
+burger.addEventListener("click", function (evt) {
+  evt.preventDefault();
+
+  if (burger.classList.contains("burger-button--open")) {
+    burger.classList.remove("burger-button--open");
+    burger.classList.add("burger-button--close");
+    menu.classList.remove("main-menu--closed");
+    menu.classList.add("main-menu--opened");
+  } else {
+    burger.classList.remove("burger-button--close");
+    burger.classList.add("burger-button--open");
+    menu.classList.remove("main-menu--opened");
+    menu.classList.add("main-menu--closed");
+  }
+
+});
+
+
+var popup = document.querySelector(".modal");
+var order = document.querySelector(".popular-product__order-button");
+var carts = document.querySelectorAll(".product__cart-button");
+
+
+if (order) {
+  order.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    if (popup.classList.contains("modal--close")) {
+      popup.classList.remove("modal--close");
+      popup.classList.add("modal--show");
+    }
+  });
+}
+
+if (carts) {
+  for (var i = 0; i < carts.length; i++) {
+    carts[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+
+      if (popup.classList.contains("modal--close")) {
+        popup.classList.remove("modal--close");
+        popup.classList.add("modal--show");
+      }
+    });
+  }
+}
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal--show")) {
+      popup.classList.remove("modal--show");
+      popup.classList.add("modal--close");
+    }
+  }
+});
+
+
 /*! picturefill - v3.0.2 - 2016-02-12
  * https://scottjehl.github.io/picturefill/
  * Copyright (c) 2016 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT
