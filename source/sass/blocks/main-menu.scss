@@ -20,11 +20,11 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 16px;
   }
 
   .main-menu__logo {
-    margin-left: 60px;
+    margin-left: 85px;
     margin-right: auto;
   }
 
@@ -35,8 +35,8 @@
 
   .main-menu__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 30px;
+    padding-top: 26px;
+    padding-bottom: 24px;
     border-bottom: solid 1px #ececec;
   }
 
@@ -84,14 +84,8 @@
 
     .main-menu__list--1,
     .main-menu__list--2 {
-      position: absolute;
-      z-index: 1;
       width: 100%;
       background-color: #fafafa;
-    }
-
-    .main-menu__list--2 {
-      top: 260px;
     }
   }
 
@@ -110,6 +104,10 @@
 
 .main-menu__logo--index:active {
   opacity: 1;
+}
+
+.main-menu__icon {
+  color: #231f20;
 }
 
 .main-menu__link--interactive:active .main-menu__icon {
@@ -147,7 +145,7 @@
       margin: 0;
       padding: 0;
       padding-top: 22px;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
     }
 
     .main-menu__list--1,
@@ -159,6 +157,8 @@
     .main-menu__list--1 {
       position: absolute;
       top: 105px;
+      left: 0;
+      max-width: 400px;
     }
 
     .main-menu__link {
@@ -180,7 +180,7 @@
     }
 
     .main-menu__link--catalog {
-      margin-right: 37px;
+      // margin-right: 37px;
       border-top: none;
     }
 
@@ -214,8 +214,17 @@
       font-size: 15px;
     }
   }
-}
 
+  .main-menu__list--1 {
+    .main-menu__link {
+      margin-right: 37px;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
 
 @media (min-width: 1150px) {
   .main-menu {
@@ -243,7 +252,7 @@
       display: block;
       width: 326px;
       padding-top: 9px;
-      padding-bottom: 7px;
+      padding-bottom: 0;
       padding-left: 75px;
     }
 
@@ -255,7 +264,9 @@
       position: absolute;
       top: 105px;
       display: flex;
+      flex-wrap: wrap;
       order: 4;
+      max-width: 780px;
     }
 
     .main-menu__link--catalog {
@@ -271,10 +282,6 @@
     .main-menu__link--new,
     .main-menu__link--sale {
       padding: 0;
-    }
-
-    .main-menu__link--new {
-      margin-right: 60px;
     }
 
     .main-menu__text--catalog,
@@ -321,5 +328,15 @@
 
   .main-menu__link--interactive:active .main-menu__icon {
     opacity: 0.3;
+  }
+
+  .main-menu__list--3 .main-menu__link {
+    margin-right: 60px;
+  }
+
+  .main-menu__list--1 {
+    .main-menu__link {
+      margin-right: 0;
+    }
   }
 }

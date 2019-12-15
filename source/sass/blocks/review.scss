@@ -1,7 +1,8 @@
 .review {
   .review__text {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+    line-height: 30px;
   }
 
   .review__author {
@@ -12,6 +13,8 @@
   }
 
   .review__link {
+    display: block;
+    margin-bottom: 30px;
     font-size: 17px;
   }
 }
@@ -26,10 +29,6 @@
     .review__author {
       font-size: 18px;
     }
-
-    .review__link {
-      font-size: 18px;
-    }
   }
 }
 
@@ -37,6 +36,11 @@
   .review {
     .review__text {
       width: 770px;
+      margin-bottom: 38px;
+    }
+
+    .review__author {
+      font-size: 17px;
     }
   }
 }

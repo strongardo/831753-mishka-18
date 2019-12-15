@@ -2,11 +2,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
-  margin: 0;
+  width: 145px;
   padding: 0;
-  padding-bottom: 27px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 4px;
 
   list-style: none;
 }
@@ -17,7 +15,7 @@
   margin-right: 31px;
 }
 
-.social__item:nth-child(2) {
+.social__item:nth-child(3n+2) {
   margin-right: 23px;
 }
 
@@ -45,7 +43,6 @@
 @media (min-width: 768px) {
   .social {
     padding-bottom: 0;
-    border-bottom: none;
   }
 }
 

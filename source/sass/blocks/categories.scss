@@ -10,8 +10,8 @@
   .categories__link {
     position: relative;
     display: block;
-    padding-top: 27px;
-    padding-bottom: 33px;
+    padding-top: 25px;
+    padding-bottom: 30px;
     transition-duration: 0.5s;
   }
 
@@ -28,7 +28,7 @@
     width: 40px;
     height: 62px;
     top: 23px;
-    right: 40px;
+    right: 118px;
     background-image: url("../img/icon-interior.svg");
   }
 
@@ -39,8 +39,8 @@
   .categories__link--toys::before {
     width: 60px;
     height: 60px;
-    top: 27px;
-    right: 30px;
+    top: 20px;
+    right: 108px;
     background-image: url("../img/icon-toy.svg");
   }
 
@@ -79,6 +79,16 @@
 
     .categories__link {
       width: 334px;
+    }
+
+    .categories__link--interior::before {
+      top: 28px;
+      right: 38px;
+    }
+
+    .categories__link--toys::before {
+      top: 30px;
+      right: 35px;
     }
 
     .categories__text {

@@ -5,10 +5,16 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <nav class="page-header__main-menu main-menu">
@@ -48,7 +54,7 @@
           <a href="#" class="main-menu__link main-menu__link--search main-menu__link--interactive">
             <div class="main-menu__group">
               <svg class="main-menu__icon main-menu__icon--search" width="18" height="18">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               <span class="main-menu__text main-menu__text--search">Поиск по сайту</span>
             </div>
@@ -58,7 +64,7 @@
           <a href="#" class="main-menu__link  main-menu__link--cart main-menu__link--interactive">
             <div class="main-menu__group main-menu__group--cart">
               <svg class="main-menu__icon main-menu__icon--cart" width="21" height="18">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               <span class="main-menu__text">Корзина: пока пуста</span>
             </div>
@@ -70,7 +76,6 @@
           <a href="#" class="main-menu__link main-menu__link--new main-menu__link--interactive">
             <span class="main-menu__text main-menu__text--new">Новые поступления</span>
           </a>
-
         </li>
         <li class="main-menu__item main-menu__item--sale">
           <a href="#" class="main-menu__link main-menu__link--sale main-menu__link--interactive">
@@ -82,12 +87,12 @@
     <span class="page-header__delivery">Бесплатная доставка по России</span>
   </header>
   <main class="page-main">
+
     <div class="promo promo--home">
       <div class="container">
         <h1 class="promo__title">Милые штуки ручной<br> работы для дома</h1>
       </div>
     </div>
-
     <section class="categories">
       <h2 class="visually-hidden">Категории</h2>
       <ul class="categories__list">
@@ -157,22 +162,22 @@
         <h2 class="about-us__title section-title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--flower">
-            Экологически чистые материалы
+            Экологически<br> чистые материалы
           </li>
           <li class="about-us__item about-us__item--ball">
             Связано вручную с любовью и умилением
           </li>
           <li class="about-us__item about-us__item--ruble">
-            Скандинавский стиль по российской цене
+            Скандинавский стиль<br> по российской цене
           </li>
           <li class="about-us__item about-us__item--rocket">
             Поддержка отечественного производителя
           </li>
           <li class="about-us__item about-us__item--heart">
-            Увеличивает лайки на фотографиях
+            Увеличивает лайки<br> на фотографиях
           </li>
           <li class="about-us__item about-us__item--present">
-            Поставляется в подарочной упаковке
+            Поставляется в<br> подарочной упаковке
           </li>
         </ul>
       </div>
@@ -184,8 +189,7 @@
           <ul class="reviews__list">
             <li class="reviews__item review">
               <blockquote class="review__text">
-                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у
-                популярных
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
                 инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
                 стильными, а также набирают больше лайков!
               </blockquote>
@@ -194,8 +198,7 @@
             </li>
             <li class="visually-hidden reviews__item review">
               <blockquote class="review__text">
-                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у
-                популярных
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
                 инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
                 стильными, а также набирают больше лайков!
               </blockquote>
@@ -204,8 +207,7 @@
             </li>
             <li class="visually-hidden reviews__item review">
               <blockquote class="review__text">
-                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у
-                популярных
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
                 инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
                 стильными, а также набирают больше лайков!
               </blockquote>
@@ -237,7 +239,7 @@
             <tr class="contacts__address">
               <td class="contacts__type contacts__type--address">адрес:</td>
               <td class="contacts__value contacts__value--address">
-                г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д.19/8, офис 101
+                г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
               </td>
             </tr>
           </table>
@@ -247,14 +249,14 @@
         </iframe>
       </div>
       <div class="container contacts__button-container">
-        <button class="contacts__write-button button" type="button">Напишите нам</button>
+        <a class="contacts__write-button button" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="container">
-      <a class="page-footer__logo">
-        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="image"
+      <a class="page-footer__logo page-footer__logo--index">
+        <svg class="footer-logo__image" viewBox="0 0 101.615 34.056" width="102" height="34" role="img"
           aria-label="Логотип интернет-магазина 'Мишка'">
           <g>
             <path
@@ -278,7 +280,7 @@
         <li class="social__item">
           <a href="#" class="social__link social__link--in">
             <svg class="social__image social__image--in" width="21" height="21">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
             <span class="visually-hidden">Инстаграм</span>
           </a>
@@ -286,7 +288,7 @@
         <li class="social__item">
           <a href="#" class="social__link social__link--fb">
             <svg class="social__image" width="15" height="29">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
             <span class="visually-hidden">Фейсбук</span>
           </a>
@@ -294,7 +296,7 @@
         <li class="social__item">
           <a href="#" class="social__link social__link--tw">
             <svg class="social__image social__image--tw" width="24" height="20">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
             <span class="visually-hidden">Твиттер</span>
           </a>
@@ -329,8 +331,7 @@
     </form>
   </section>
 
-  <script src="js/menu.js"></script>
-  <script src="js/modal-index.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

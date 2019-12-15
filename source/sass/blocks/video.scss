@@ -1,6 +1,6 @@
 .video {
   padding-top: 21px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
   margin-bottom: 58px;
   border: 1px solid #ececec;
 
@@ -24,6 +24,7 @@
 
   .video__container {
     position: relative;
+    margin-bottom: 23px;
   }
 
   .video__play-icon {
@@ -73,18 +74,19 @@
 @media (min-width: 768px) {
   .video {
     position: relative;
-    margin-bottom: 58px;
+    margin-bottom: 62px;
     padding-top: 0;
     padding-bottom: 45px;
 
     .video__title {
       position: absolute;
-      bottom: 182px;
-      left: 40px;
+      bottom: 200px;
+      left: 42px;
       width: auto;
       padding-top: 50px;
       padding-left: 63px;
-      font-size: 24px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     .video__title::before {
@@ -92,12 +94,24 @@
       left: 0;
     }
 
+    .video__description {
+      margin-bottom: 34px;
+      padding-left: 40px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
     .video__combiner {
-      margin-top: 98px;
+      margin-top: 90px;
     }
 
     .video__container {
       margin-bottom: 40px;
+    }
+
+    .video__order-button {
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     .video__image {
@@ -109,7 +123,7 @@
 
 @media (min-width: 1150px) {
   .video {
-    margin-bottom: 100px;
+    margin-bottom: 104px;
     padding-bottom: 0;
 
     .video__wrapper {
@@ -154,14 +168,15 @@
     }
 
     .video__order-button {
-      width: 235px;
+      width: 230px;
       margin-left: 0;
       margin-right: 0;
-      padding-left: 45px;
-      padding-right: 45px;
+      padding-left: 38px;
+      padding-right: 38px;
     }
 
     .video__image {
+      display: block;
       width: 682px;
       height: 455px;
     }
