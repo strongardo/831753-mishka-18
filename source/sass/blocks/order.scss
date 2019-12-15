@@ -515,6 +515,12 @@
     border-color: #62d1ba;
   }
 
+  .order__input:hover + .order__icon,
+  .order__input:focus + .order__icon {
+    color: #62d1ba;
+    opacity: 1;
+  }
+
   .order__input:active {
     border-color: #62d1ba;
   }
